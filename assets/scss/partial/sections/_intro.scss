@@ -1,0 +1,79 @@
+.slider{
+    background-image: url(https://trax.acrothemes.com/bootstrap-v5/images/banner1-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    .slider-title{
+        transform: translateY(250px);
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+    }
+    .slider-number{
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        span{
+            color: #fff;
+            font-weight: $light-weight;
+            z-index: 1;
+        }
+    }
+    .title{
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 1;
+        
+        h2{
+            font-size: 40px;
+            font-weight: $light-weight;
+            color: #fff;
+        }
+        .text-diff{
+            font-weight: $bold;
+        }
+        p{
+            font-size: $font-size-text_15;
+            color: #fff;
+        }
+    }
+
+    .sm-contact{
+        z-index: 1;
+        li{
+            text-align: center;
+        }
+        i{
+            color: #fff;
+        }
+    }
+}
+
+.slider .cards{
+    transform: translateY(350px);
+    .slider-card{
+        height: 275px;
+        background-color: $primary-color;
+        text-align: center;
+        padding: 30px;
+        i{
+            font-size: $font-size-title_24;
+        }
+        p{
+            font-size: $font-size-text_14;
+        }
+    }
+    .slider-card.diff{
+        height: 300px;
+       background-image: $linear-gradient-blue;
+    }
+}

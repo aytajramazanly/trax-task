@@ -1,0 +1,46 @@
+.app-design{
+    .design-title{
+       @extend %title;
+    }
+
+    .app-feature{
+        .icon {
+            margin: 0;
+            i{
+                font-size: $font-size-title;
+                color: $secondary-color;
+            }
+        }
+
+        .phone{
+            height: 475px;
+            overflow: hidden;
+            width: 235px;
+            margin: 0 auto;
+            position: relative;
+            
+            .screen{
+                border-radius: 20%;
+            }
+            .case{
+                position: absolute;
+                left: 0;
+            }
+
+            &::after{
+                content: "";
+                border: 3px solid $dark;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                left: 42%;
+                top: 100%;
+                transition: 0.4s;
+            }
+            &:hover::after{
+                top: 86%;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.improve-bussiness{
+    margin-top: 18%;
+    .description {
+        padding-top: 8%;
+        .block{
+            display: block;
+        }
+        .blue{
+            color: $secondary-color;
+        }
+        p{
+            color: $light;
+            font-size: $font-size-text_14;
+            width: 92%;
+        }
+
+        button{
+           @include btns;
+        }
+    }
+    .img-box{
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@mixin btns ($width: 28%){
+    border-radius: 20px;
+    width: $width;
+    height: 10%;
+    background-image: $linear-gradient-blue;
+    border-color: $secondary-color;
+    text-transform: uppercase;
+    font-size: $font-size-text_14;
+}

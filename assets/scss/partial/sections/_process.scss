@@ -1,0 +1,36 @@
+.dark{
+    background-color: $primary-color;
+    a{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+    }
+    }
+    .icon{
+        span{
+            font-size: 28px;
+            position: relative;
+            &.diff::after{
+                content: "";
+                border: 1px solid $white;
+                border-radius: 50%;
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                top: -80%;
+                left: -100%;
+            }
+            &::after{
+                content: "";
+                border: 1px solid $white;
+                border-radius: 50%;
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                top: -80%;
+                left: -80%;
+            }
+        }
+        margin-bottom: 50px;
+}

@@ -1,0 +1,9 @@
+@import "./partial/variables";
+@import "./partial/mixins/index";
+@import "./partial/sections/index";
+@import "./partial/utils/index";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}

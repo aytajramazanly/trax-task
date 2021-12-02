@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.white{
+    color: #fff;
+}
+p{
+    font-size: $font-size-text_14;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: $font-size-title;
+    font-weight: 400;
+}
+
+h2,h3,h4,h5{
+    color: $dark;
+}
+
+@media only screen and (max-width: 992px){
+    header {
+        .bars-logo{
+            display: none !important;
+        }
+    }
+    .slider .cards {
+        .slider-card.none{
+            display: none !important;
+        }
+        .slider-card{
+            width: 500px;
+        }
+        transform: translateY(350px);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .slider .cards {
+        .slider-card{
+            height: 150px;
+            .icon{
+                margin: 0;
+            }
+        }
+        transform: translateY(330px);
+    }
+    .slider .slider-title{
+        transform: translateY(200px);
+        .none{
+            display: none !important;
+        }
+    }
+
+    .portfolio .portfolio-title{
+        .portfolio-filters{
+            gap: 10px !important;
+        }
+    }
+
+    .app-design{
+        .design-title{
+            padding: 80px 0;
+            text-align: center;
+            p{
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }
+
+    .team{
+        .experts-title{
+            padding: 80px 0;
+            text-align: center;
+            p{
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }
+    .portfolio{
+        padding: 80px 0;
+        .portfolio-title{
+            padding: 80px 0;
+            text-align: center;
+            p{
+                text-align: center;
+                width: 100% !important;
+            }
+            .portfolio-filters a::before{
+                display: none !important;
+            }
+        }
+
+        .grid-layout{
+            display: flex !important;
+        }
+        button{
+            width: 52% !important;
+        }
+
+        
+    }
+    .read-blog{
+        margin-top: 185px;
+        .read-blog-title{
+            padding: 80px 0;
+            text-align: center;
+            p{
+                text-align: center;
+                width: 100% !important;
+            }
+            .portfolio-filters a::before{
+                display: none !important;
+            }
+        }
+    } 
+    
+    .counter .bg-counter{
+        gap: 25px;
+    }
+}

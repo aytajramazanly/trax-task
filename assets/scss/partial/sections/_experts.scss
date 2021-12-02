@@ -1,0 +1,124 @@
+.team{
+    .experts-title{
+        @extend %title;
+    }
+}
+
+.team-members{
+    .cards{
+        height: 390px;
+        gap: 25px;
+        overflow: hidden;
+        padding: 0;
+        width: 280px;
+        &:hover .img-box img{
+            transform: scale(1.2);
+            
+        }
+        &:hover .about{
+            transform: translateY(-15px);
+            
+            color: rgb(252, 238, 238);
+        }
+        
+        &:hover .sm-contact{
+            transform: translateY(-55px);
+        }
+        
+        // &:hover .sm-contact ul{
+        //     visibility: visible;
+        // }
+        &:hover .box-2::before{
+            transform: translateY(-100px);
+        }
+        .about{
+            padding: 24px 0;
+            text-align: center;
+            transition: 0.8s;
+            h4{
+                font-size: $font-size-text;
+                margin: 0;
+            }
+            p{
+                color: $light;
+            }
+        }
+
+        .img-box{
+            height: 75%;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 100%;
+                transition: 0.8s;
+            }
+        }
+
+        .box-2{
+            position: relative;
+        }
+        .box-2::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #5192e1 0%, #23ced5 51%, #5192e1 100%);
+            position: absolute;
+            top: 100px;
+            transition: 0.8s;
+        }
+    }
+}
+
+.team-members .cards .sm-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transition: 0.8s;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        i{
+            color: rgb(252, 238, 238);
+            font-size: 17px;
+        }
+        li{
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 6px;
+            transition: 0.6s;
+            position: relative;
+        }
+    }
+    .instagram{
+        background-image: rgb(56, 149, 224);
+    }
+    .facebook:hover{
+        background-color: #3b5998 ;
+    }
+    .twitter:hover{
+        background-color: #00acee ;
+    }
+
+    .instagram::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to top, #F58529, #FEDA77,  #DD2A7B, #8134AF, #515BD4);
+        z-index: -1;
+        opacity: 0;
+    }
+    .instagram:hover::after{
+        opacity: 1;
+        transition: 1s;
+    }
+}
