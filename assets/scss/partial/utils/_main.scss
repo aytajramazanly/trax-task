@@ -28,6 +28,8 @@ h2,h3,h4,h5{
             display: none !important;
         }
     }
+}
+@media only screen and(max-width: 768px){
     .slider .cards {
         .slider-card.none{
             display: none !important;
@@ -35,26 +37,20 @@ h2,h3,h4,h5{
         .slider-card{
             width: 500px;
         }
-        transform: translateY(350px);
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .slider .cards {
-        .slider-card{
-            height: 150px;
-            .icon{
-                margin: 0;
-            }
-        }
-        transform: translateY(330px);
     }
     .slider .slider-title{
-        transform: translateY(200px);
         .none{
             display: none !important;
         }
     }
+}
+@media only screen and (max-width: 600px){
+    .slider .cards {
+        .slider-card{
+            height: 150px;
+        }
+    }
+    
 
     .portfolio .portfolio-title{
         .portfolio-filters{

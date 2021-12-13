@@ -1,36 +1,32 @@
 .dark{
+    position: relative;
     background-color: $primary-color;
     a{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-       
+       &:hover{
+           color: white;
+       }
+       &:hover .step{
+           background-color: $secondary-color;
+           border-color: $secondary-color;
+       }
     }
-    }
-    .icon{
+    .step{
+        height: 90px;
+        width: 90px;
+        border: 1px solid;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        transition: 0.6s;
         span{
             font-size: 28px;
-            position: relative;
-            &.diff::after{
-                content: "";
-                border: 1px solid $white;
-                border-radius: 50%;
-                width: 90px;
-                height: 90px;
-                position: absolute;
-                top: -80%;
-                left: -100%;
-            }
-            &::after{
-                content: "";
-                border: 1px solid $white;
-                border-radius: 50%;
-                width: 90px;
-                height: 90px;
-                position: absolute;
-                top: -80%;
-                left: -80%;
-            }
+            position: absolute;
+            top: 27%;
+            left: 34%;
         }
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+    }
 }

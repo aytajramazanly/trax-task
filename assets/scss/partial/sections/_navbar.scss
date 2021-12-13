@@ -3,9 +3,17 @@
     position: fixed;
     z-index: 999;
     width: 100%;
+    color: wheat;
+    transition: all 0.4s;
     .logo{
         img {
             width: 80%;
+        }
+        .display-none{
+            display: none;
+        }
+        .inline-b{
+            display: inline-block;
         }
     }
     .collapse{
@@ -14,7 +22,7 @@
     .nav-item .nav-link{
         font-size: $font-size-text_15;
         letter-spacing: $letter-sp-1;
-        color: $primary-color;
+        color: $white;
         transition: 0.3s;
         position: relative;
         &:hover{

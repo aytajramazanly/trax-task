@@ -7,11 +7,20 @@
         .icon {
             margin: 0;
             i{
-                font-size: $font-size-title;
+                font-size: 35px;
                 color: $secondary-color;
+                transition: 0.5s;
             }
         }
-
+        h4{
+            transition: 0.5s;
+        }
+        .app-cards:hover .icon i{
+            transform: translateY(-10px);
+        }
+        .app-cards:hover h4{
+            color: $secondary-color !important;
+        }
         .phone{
             height: 475px;
             overflow: hidden;

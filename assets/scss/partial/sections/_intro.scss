@@ -5,9 +5,9 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    .slider-title{
-        transform: translateY(250px);
-    }
+    // .slider-title{
+    //     transform: translateY(250px);
+    // }
     &::before{
         position: absolute;
         content: '';
@@ -55,11 +55,67 @@
         i{
             color: #fff;
         }
+
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transition: 0.8s;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            i{
+                color: rgb(252, 238, 238);
+                font-size: 14px;
+            }
+            li{
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                text-align: center;
+                padding-top: 6px;
+                transition: 0.6s;
+                position: relative;
+            }
+        }
+        .instagram{
+            background-image: rgb(56, 149, 224);
+        }
+        .facebook:hover{
+            background-color: #3b5998 ;
+        }
+        .twitter:hover{
+            background-color: #00acee ;
+        }
+        .linkedin:hover{
+            background-color: #0e76a8;
+        }
+
+    .instagram::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to top, #F58529, #FEDA77,  #DD2A7B, #8134AF, #515BD4);
+        z-index: -1;
+        opacity: 0;
+    }
+    .instagram:hover::after{
+        opacity: 1;
+        transition: 1s;
+    }
     }
 }
 
 .slider .cards{
-    transform: translateY(350px);
+       position: absolute;
+        top: 80%;
+        width: 100%;
     .slider-card{
         height: 275px;
         background-color: $primary-color;
