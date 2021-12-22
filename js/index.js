@@ -1,18 +1,15 @@
+let whiteLogo=document.querySelector(".white-logo")
+let darkLogo=document.querySelector(".dark-logo")
+let nav=document.querySelector(".mynav")
 document.addEventListener("scroll",()=>{
-    if (window.scrollY>500) {
-        document.querySelector(".mynav").classList.add("bg-light")
-        document.querySelectorAll(".nav-link").forEach((link)=>link.style.color="#26313c")
-        document.querySelector(".dark-logo").classList.remove("display-none")
-        document.querySelector(".white-logo").classList.remove("inline-b")
-        document.querySelector(".white-logo").classList.add("display-none")
-        document.querySelector(".dark-logo").classList.add("inline-b")
+    if (window.scrollY>200) {
+       darkLogo.classList.remove("d-none")
+       whiteLogo.classList.add("d-none")
+       nav.classList.add("nav-scroll")
     }
     else{
-        document.querySelector(".mynav").classList.remove("bg-light");
-        document.querySelectorAll(".nav-link").forEach((link)=>link.style.color="#fff")
-        document.querySelector(".white-logo").classList.remove("display-none")
-        document.querySelector(".dark-logo").classList.remove("inline-b")
-        document.querySelector(".dark-logo").classList.add("display-none")
-        document.querySelector(".white-logo").classList.add("inline-b")
+        darkLogo.classList.add("d-none")
+        whiteLogo.classList.remove("d-none")
+        nav.classList.remove("nav-scroll")
     }
 })

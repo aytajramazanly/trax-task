@@ -53,6 +53,29 @@
   color: #26313c;
 }
 
+.nav-scroll {
+  background-color: white;
+  color: #333;
+}
+
+.nav-scroll #navbarNav .nav-link {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #384141;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  font-weight: 400;
+}
+
+.nav-scroll #navbarNav .nav-link:hover {
+  color: #24CDD5;
+}
+
+.nav-scroll #navbarNav .nav-link::first-letter {
+  text-transform: uppercase;
+}
+
 .slider {
   background-image: url(https://trax.acrothemes.com/bootstrap-v5/images/banner1-4.jpg);
   background-size: cover;

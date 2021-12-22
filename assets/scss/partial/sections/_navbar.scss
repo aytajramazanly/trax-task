@@ -44,3 +44,22 @@
         }
     }
 }
+
+.nav-scroll{
+    background-color: white;
+    color: #333;
+    #navbarNav .nav-link{
+        font-size: $font-size-text_15;
+        letter-spacing: $letter-sp-1;
+        color: $dark;
+        transition: 0.3s;
+        position: relative;
+        font-weight: 400;
+        &:hover{
+            color: $secondary-color;
+        }
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}
